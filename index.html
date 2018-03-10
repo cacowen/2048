@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>2048 - cacowen</title>
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 10px 0;
+      margin: 0;
+      text-align: center;
+    }
+  </style>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="sketch.js"></script>
+  <script src="tile.js"></script>
+  <script src="game.js"></script>
+</head>
+
+<body>
+  <p>This game was made using
+    <a href="https://p5js.org/" target="_blank">p5.js</a>
+    <br/>thanks <a href="https://www.youtube.com/user/shiffman" target="_blank">Dan Shiffman</a>
+    <br/>and is my take on the original
+    <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048</a> game.</p>
+
+  <p> Score:
+    <span id="score">0</span>
+  </p>
+
+  <div id="sketch-holder"></div>
+
+  <div style="margin: 5px;">
+    <label for="board-size">Board Size</label>
+    <input id="board-size" type="range" min="3" max="10" step="1" value="4" />
+  </div>
+
+  <div style="margin: 5px;">
+    <label for="value-1">Initial Value 1</label>
+    <input id="value-1" type="number" value="2" />
+  </div>
+
+  <div style="margin: 5px;">
+    <label for="value-2">Initial Value 2</label>
+    <input id="value-2" type="number" value="4" />
+  </div>
+</body>
+
+</html>
